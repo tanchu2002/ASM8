@@ -1,0 +1,43 @@
+#include <stdio.h>
+int ucln(int a, int b){
+ int min;
+    
+    if(a<b){
+        min=a;
+    }else{
+        min=b;
+    }
+    
+    int i;
+    i=min;
+    int ucln=1;
+    
+    while(i>=1){
+        if(a%i==0&&b%i==0){
+            ucln=i;
+            i=0;
+        }else{
+            i=i-1;
+        }
+    }
+}
+
+int bcnn(int a, int b){
+    bcnn=(a*b)/ucln;
+}
+int main()
+{
+    int a;
+    printf("nhap a: ");
+    scanf("%d",&a);
+    
+    int b;
+    printf("nhap b: ");
+    scanf("%d",&b);
+    
+    int 
+    printf("uoc chung lon nhat la: %d\n", ucln);
+    
+    
+    printf("boi chung nho nhat la: %d\n", bcnn);
+}
